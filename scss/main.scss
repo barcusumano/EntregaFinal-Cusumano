@@ -1,0 +1,288 @@
+@import "colores";
+@import "fuentes";
+
+
+/* Personalizacion bootstrap*/
+
+@mixin textpadding {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+/* navbar */ 
+
+body {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-brand {
+        font-family: $titlefont;
+        color: $navlogocolor;
+        padding-left: 10px;
+        transition: transform 0.2s ease-in-out;
+          
+            &:hover {
+              transform: scale(1.50);
+            }
+    
+          
+    
+
+        .nav-link {
+            color: $navlinkcolor;
+        }
+   }
+}
+
+
+/* body home */
+
+.homephoto {
+    float: right;
+    height: auto;
+    padding: 0px;
+    
+
+}
+
+.hometitle {
+    color: $titlecolor;
+    font-family: $titlefont;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;    
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+} 
+
+/* footer */
+
+.bgcolorfooter {
+    background-color: #F2F2F2;
+
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-right: 0px;
+        
+    
+        .icono {
+            width: 35px;
+            padding: 8px;
+            transition: transform 0.2s ease-in-out;
+          
+            &:hover {
+              transform: scale(1.15);
+            }
+        }
+    }
+}
+
+
+/* cuerpo who am i */
+
+    
+        
+.bgwhoami {
+    background-color: $bgdarkcolor;
+    padding-left: 0px;
+
+    .fotoperfil {
+        float: left;
+        min-height: auto;
+        padding-left: 0px;
+    }
+
+    .whoami {
+        color: $titlecolor;
+        font-family: $titlefont;            
+        display: flex;
+        flex-wrap: nowrap;
+        @include textpadding;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+            
+        
+    }
+        
+    .text1 {
+        color: $lighttextcolor;
+        text-align:left;
+        @include textpadding;
+    }
+        
+}
+
+
+
+
+/* cuerpo que hago */
+
+.bgwhatdoido {
+   background-color: $bglightcolor;
+
+    .toprow{
+        height: 50%;
+    
+        .quehago {
+
+            color: $titlecolor;
+            padding-top: 20px;
+            padding-left: 20px;
+            font-family: $titlefont;
+            display: flex;
+            flex-wrap: nowrap;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+        }
+        
+        .fotoquehago1 {
+            margin-bottom: 20px;
+        }
+    }    
+
+    .btrow {
+        height: 50%;
+    }
+    .text2 {
+        color: $darktextcolor;
+        text-align:left;
+        @include textpadding;
+        overflow: hidden
+    }
+
+    
+        
+      
+}
+
+
+
+/* cuerpo whereonearth */
+
+.amsbg {
+    background-color: $bglightcolor;
+    padding-left: 0%;
+
+    .canal {
+        float: left;
+        min-height: auto;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    .amsterdam {
+        color: $titlecolor;
+        @include textpadding;
+        font-family: $titlefont;
+        display: flex;
+        flex-wrap: nowrap;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    
+    }
+    
+    .text3 {
+        color: $darktextcolor;
+        text-align:left;
+        @include textpadding;
+        text-overflow: hidden;
+    }
+    
+}
+
+.maprow {
+    background-color: $bgdarkcolor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .gmapscont{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+
+/* cuerpo contacto */
+
+
+.bgcontacto {
+    min-height: 100vh;
+    background-image: url(../media/Byron3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .hitme {
+        display: flex;
+        justify-content: start;
+
+        .hitmeup {
+            color: $titlecolor;
+            padding-top: 20px;
+            margin-left: 20px;
+            font-family: $titlefont;
+            flex-wrap: nowrap;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+        }
+    
+    }
+
+    form {
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 321px) {
+    .hitme {
+      text-align: end;
+      margin-right: 5px;
+    }
+    .hitme .hitmeup {
+      color: $lighttextcolor;
+    }
+    .homebod {
+      background-color: $bglightcolor;
+    }
+  
+    .block {
+      display: block;
+    }
+  
+    .whoami {
+      display: block;
+    }
+
+    .amsterdam {
+        display: block;
+    }
+  }
+

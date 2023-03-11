@@ -260,8 +260,10 @@ body {
     .hitme {
       text-align: end;
       margin-right: 5px;
-      color: $lighttextcolor;
     }
 
-
+    .hitmeup {
+        font-family: $titlefont;
+        color: $lighttextcolor;
+    }
 }

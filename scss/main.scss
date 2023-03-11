@@ -256,33 +256,12 @@ body {
 }
 
 
-
-
-
-
-
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 576px) {
     .hitme {
       text-align: end;
       margin-right: 5px;
-    }
-    .hitme .hitmeup {
       color: $lighttextcolor;
     }
-    .homebod {
-      background-color: $bglightcolor;
-    }
-  
-    .block {
-      display: block;
-    }
-  
-    .whoami {
-      display: block;
-    }
 
-    .amsterdam {
-        display: block;
-    }
-  }
 
+}

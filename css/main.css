@@ -196,25 +196,11 @@ body .navbar-brand .nav-link {
   justify-content: center;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 576px) {
   .hitme {
     text-align: end;
     margin-right: 5px;
-  }
-  .hitme .hitmeup {
     color: #D9D9D9;
-  }
-  .homebod {
-    background-color: #F2F2F2;
-  }
-  .block {
-    display: block;
-  }
-  .whoami {
-    display: block;
-  }
-  .amsterdam {
-    display: block;
   }
 }
 
